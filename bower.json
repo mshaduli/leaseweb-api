@@ -1,0 +1,22 @@
+{
+  "name": "serversapi",
+  "authors": [
+    "Muhammadali <ali@volyty.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.7.0",
+    "bootstrap": "^4.1.1"
+  }
+}
