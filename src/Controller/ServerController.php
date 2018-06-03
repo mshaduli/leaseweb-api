@@ -18,11 +18,11 @@ class ServerController extends FOSRestController
      *
      * @QueryParam(name="storage_min", nullable=true, description="Min Storage size to filter")
      * @QueryParam(name="storage_max", nullable=true, description="Max Storage size to filter")
-     * @QueryParam(name="ram", requirements="\d+", nullable=true, description="Size of RAM")
+     * @QueryParam(name="ram", nullable=true, description="Size of RAM")
      * @QueryParam(name="storage_type", nullable=true, description="Type of disk")
      * @QueryParam(name="location", nullable=true, description="location")
      * @QueryParam(name="page", requirements="\d+", default=1, nullable=true, description="Offset from which to start listing pages.")
-     * @QueryParam(name="limit", requirements="\d+", default=12, description="How many pages to return.")
+     * @QueryParam(name="limit", requirements="\d+", default=10, description="How many pages to return.")
      *
      * @param ParamFetcher $paramFetcher
      * @Get("/api/servers/list")

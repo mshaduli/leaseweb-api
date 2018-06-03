@@ -51,8 +51,9 @@ class ServerRepository extends ServiceEntityRepository
         }
 
         if(!empty($filters->get('ram'))) {
-            $query->andWhere('s.ram = :ram')
-                ->setParameter('ram', $filters->get('ram'));
+            $ramParams = explode(',', $filters->get('ram'));
+            $query->andWhere('s.ram IN (:ram)')
+                ->setParameter('ram', $ramParams);
         }
 
         return $query->getQuery();
