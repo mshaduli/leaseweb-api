@@ -1,4 +1,4 @@
-# LEASE WEB API
+# LEASE WEB API (FOR DEMO ONLY)
 Devon Task API
 
 # How to run install and run api
