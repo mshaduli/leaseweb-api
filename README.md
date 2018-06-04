@@ -1,9 +1,9 @@
-# leaseweb-api
+# LEASE WEB API
 Devon Task API
 
 # How to run install and run api
 
-# Clone the repository: git clone git@github.com:mshaduli/leaseweb-api.git
+Clone the repository: git clone git@github.com:mshaduli/leaseweb-api.git
 
 Run the following command after cloning
 
