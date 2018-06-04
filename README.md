@@ -29,6 +29,9 @@ serevrs.sql file is provided in root dir of app. Please upload or import this to
 
 mysql -uroot -p dbnmae < path to servers.sql
 
+# Run the application
+
+php bin/console server:run
 
 
 
