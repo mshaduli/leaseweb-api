@@ -23,6 +23,14 @@ Create the schema and update table structure
 
 php bin/console doctrine:schema:create
 
+# CORS Config (You must do this)
+
+Add this to end of .env file 
+
+###> nelmio/cors-bundle ###
+CORS_ALLOW_ORIGIN=^https?://localhost:?[0-9]*$
+###< nelmio/cors-bundle ###
+
 # Data import
 
 serevrs.sql file is provided in root dir of app. Please upload or import this to mysql db via phpMyAdmin or through command line
