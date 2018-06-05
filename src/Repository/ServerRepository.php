@@ -30,8 +30,7 @@ class ServerRepository extends ServiceEntityRepository
     public function findByFilters(ParamFetcher $filters)
     {
         $query = $this->createQueryBuilder('s')
-            ->orderBy('s.id', 'DESC')
-
+            ->orderBy('s.'.$filters->get('sort_by'), $filters->get('sort_type'))
         ;
 
         if(!empty($filters->get('location'))) {

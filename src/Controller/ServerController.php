@@ -21,6 +21,8 @@ class ServerController extends FOSRestController
      * @QueryParam(name="ram", nullable=true, description="Size of RAM")
      * @QueryParam(name="storage_type", nullable=true, description="Type of disk")
      * @QueryParam(name="location", nullable=true, description="location")
+     * @QueryParam(name="sort_by", description="sort parameter")
+     * @QueryParam(name="sort_type", description="sort type as ASC or DESC")
      * @QueryParam(name="page", requirements="\d+", default=1, nullable=true, description="Offset from which to start listing pages.")
      * @QueryParam(name="limit", requirements="\d+", default=10, description="How many pages to return.")
      *
